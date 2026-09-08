@@ -1,0 +1,428 @@
+{
+  "id": "5d530745-00e2-49e4-bb88-8ee87406678d",
+  "revision": 0,
+  "last_node_id": 6,
+  "last_link_id": 7,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "LoadImage",
+      "pos": [
+        -335.5570871765,
+        94.57151003428986
+      ],
+      "size": [
+        415.99989318847656,
+        326.8
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            4
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "title": "INPUT · target photo",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "lipsdua.webp",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "lipsdua.webp",
+        "upload": "image"
+      }
+    },
+    {
+      "id": 5,
+      "type": "LoadImage",
+      "pos": [
+        -312.9609146351462,
+        523.2255758171847
+      ],
+      "size": [
+        415.99989318847656,
+        326.8
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            7
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "title": "INPUT · target photo",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "rouges-a-levres-rouge-grenat-n251.jpg",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "rouges-a-levres-rouge-grenat-n251.jpg",
+        "upload": "image"
+      }
+    },
+    {
+      "id": 6,
+      "type": "Note",
+      "pos": [
+        -1094.0598763555413,
+        161.83601180506972
+      ],
+      "size": [
+        700,
+        580
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "README",
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "=== README - Match Lipstick to Lips in Photo (V3) ===\n\n--- ENGLISH ---\n\nWORKFLOW: Match Lipstick to Lips in Photo\nMODEL: vermeer_flow_image — nano-banana-pro (Google | Nano Banana Pro)\nPURPOSE: Recolor the lips in a campaign/model photo to match the exact shade of a lipstick reference image — no reshoot needed per shade.\n\nINPUT:\n- Image 1 (image_ref_1) — the target photo (model/campaign shot whose lips will be recolored)\n- Image 2 (image_ref_2) — the lipstick reference (product packshot, swatch, or close-up of applied color)\n\nOUTPUT: Image (PNG) — same photo, lips recolored, everything else untouched.\n\n--- PIPELINE (Node-by-Node) ---\n\n1. INPUT · target photo (LoadImage) — Load the model/campaign photo to edit.\n2. INPUT · lipstick color reference (LoadImage) — Load the lipstick reference image (the color source).\n3. Image Edit · Lip Color Swap (vermeer_flow_image) — Single edit instruction: recolor only the lips in image_ref_1 to match the exact color shown in image_ref_2. Preserves natural lip texture, shine and shadow. Everything else (skin tone, teeth, background, framing, lighting, camera angle) stays identical to the original.\n4. Preview · result (PreviewImage) — Quick visual check before saving.\n5. Save · final photo (SaveImage) — Saves the final output.\n\n--- HOW TO CHANGE THE SHADE ---\nSwap the image plugged into image_ref_2 for a different lipstick reference photo, then re-run. No need to touch the prompt text — the color always comes from image_ref_2, not from a hex code.\n\n--- WHY AN IMAGE REFERENCE INSTEAD OF A HEX CODE ---\nImage generation models match a real color photo more reliably than a hex code typed in text, especially for close/subtle shade differences (e.g. warm red vs. blue-based red).\n\n--- GOOD FOR ---\n- Generating the full shade range from a single photoshoot\n- Matching UGC/influencer content to the official product color\n- Fast social media variations without new photography\n\n--- REQUIRED NODES ---\n- vermeer_flow_image (Vermeer Flow API node, model: nano-banana-pro or equivalent image-editing model available on your instance)\nNote: if nano-banana-pro isn't in your whitelist, swap the model field for whichever image-editing (not text-only) model is available.\n\n--- FRANÇAIS ---\n\nWORKFLOW : Match Lipstick to Lips in Photo\nMODÈLE : vermeer_flow_image — nano-banana-pro (Google | Nano Banana Pro)\nOBJECTIF : Recolorer les lèvres d'une photo de campagne/mannequin pour matcher exactement la teinte d'une image de référence du rouge à lèvres — sans reshoot par teinte.\n\nENTRÉE :\n- Image 1 (image_ref_1) — la photo cible (mannequin/campagne dont les lèvres seront recolorées)\n- Image 2 (image_ref_2) — la référence du rouge à lèvres (packshot produit, swatch, ou gros plan de la couleur appliquée)\n\nSORTIE : Image (PNG) — la même photo, lèvres recolorées, tout le reste inchangé.\n\n--- PIPELINE (node par node) ---\n\n1. INPUT · target photo (LoadImage) — Charge la photo mannequin/campagne à éditer.\n2. INPUT · lipstick color reference (LoadImage) — Charge l'image de référence du rouge à lèvres (la source de couleur).\n3. Image Edit · Lip Color Swap (vermeer_flow_image) — Instruction unique : recolorer uniquement les lèvres de image_ref_1 pour matcher exactement la couleur de image_ref_2. Préserve la texture, la brillance et les ombres naturelles des lèvres. Tout le reste (teint, dents, arrière-plan, cadrage, lumière, angle) reste identique à l'original.\n4. Preview · result (PreviewImage) — Vérification visuelle rapide avant sauvegarde.\n5. Save · final photo (SaveImage) — Sauvegarde le résultat final.\n\n--- COMMENT CHANGER LA TEINTE ---\nRemplace simplement l'image branchée sur image_ref_2 par une autre photo de référence de rouge à lèvres, puis relance. Pas besoin de toucher au texte du prompt — la couleur vient toujours de image_ref_2, pas d'un code hex.\n\n--- POURQUOI UNE IMAGE DE RÉFÉRENCE PLUTÔT QU'UN CODE HEX ---\nLes modèles de génération d'image matchent plus fidèlement une vraie photo de couleur qu'un code hex écrit en texte, surtout pour des nuances proches (ex: rouge chaud vs rouge à base bleutée).\n\n--- UTILE POUR ---\n- Générer toute la gamme de teintes à partir d'un seul shooting\n- Aligner du contenu UGC/influenceur sur la couleur officielle du produit\n- Décliner rapidement pour les réseaux sociaux sans nouveau shooting\n\n--- NODES REQUIS ---\n- vermeer_flow_image (node API Vermeer Flow, modèle : nano-banana-pro ou tout autre modèle d'édition d'image disponible sur ton instance)\nNote : si nano-banana-pro n'est pas dans ta liste whitelistée, remplace le champ model par le modèle d'édition d'image (pas juste texte) disponible chez toi."
+      ],
+      "widgets_values_named": {
+        "text": "=== README - Match Lipstick to Lips in Photo (V3) ===\n\n--- ENGLISH ---\n\nWORKFLOW: Match Lipstick to Lips in Photo\nMODEL: vermeer_flow_image — nano-banana-pro (Google | Nano Banana Pro)\nPURPOSE: Recolor the lips in a campaign/model photo to match the exact shade of a lipstick reference image — no reshoot needed per shade.\n\nINPUT:\n- Image 1 (image_ref_1) — the target photo (model/campaign shot whose lips will be recolored)\n- Image 2 (image_ref_2) — the lipstick reference (product packshot, swatch, or close-up of applied color)\n\nOUTPUT: Image (PNG) — same photo, lips recolored, everything else untouched.\n\n--- PIPELINE (Node-by-Node) ---\n\n1. INPUT · target photo (LoadImage) — Load the model/campaign photo to edit.\n2. INPUT · lipstick color reference (LoadImage) — Load the lipstick reference image (the color source).\n3. Image Edit · Lip Color Swap (vermeer_flow_image) — Single edit instruction: recolor only the lips in image_ref_1 to match the exact color shown in image_ref_2. Preserves natural lip texture, shine and shadow. Everything else (skin tone, teeth, background, framing, lighting, camera angle) stays identical to the original.\n4. Preview · result (PreviewImage) — Quick visual check before saving.\n5. Save · final photo (SaveImage) — Saves the final output.\n\n--- HOW TO CHANGE THE SHADE ---\nSwap the image plugged into image_ref_2 for a different lipstick reference photo, then re-run. No need to touch the prompt text — the color always comes from image_ref_2, not from a hex code.\n\n--- WHY AN IMAGE REFERENCE INSTEAD OF A HEX CODE ---\nImage generation models match a real color photo more reliably than a hex code typed in text, especially for close/subtle shade differences (e.g. warm red vs. blue-based red).\n\n--- GOOD FOR ---\n- Generating the full shade range from a single photoshoot\n- Matching UGC/influencer content to the official product color\n- Fast social media variations without new photography\n\n--- REQUIRED NODES ---\n- vermeer_flow_image (Vermeer Flow API node, model: nano-banana-pro or equivalent image-editing model available on your instance)\nNote: if nano-banana-pro isn't in your whitelist, swap the model field for whichever image-editing (not text-only) model is available.\n\n--- FRANÇAIS ---\n\nWORKFLOW : Match Lipstick to Lips in Photo\nMODÈLE : vermeer_flow_image — nano-banana-pro (Google | Nano Banana Pro)\nOBJECTIF : Recolorer les lèvres d'une photo de campagne/mannequin pour matcher exactement la teinte d'une image de référence du rouge à lèvres — sans reshoot par teinte.\n\nENTRÉE :\n- Image 1 (image_ref_1) — la photo cible (mannequin/campagne dont les lèvres seront recolorées)\n- Image 2 (image_ref_2) — la référence du rouge à lèvres (packshot produit, swatch, ou gros plan de la couleur appliquée)\n\nSORTIE : Image (PNG) — la même photo, lèvres recolorées, tout le reste inchangé.\n\n--- PIPELINE (node par node) ---\n\n1. INPUT · target photo (LoadImage) — Charge la photo mannequin/campagne à éditer.\n2. INPUT · lipstick color reference (LoadImage) — Charge l'image de référence du rouge à lèvres (la source de couleur).\n3. Image Edit · Lip Color Swap (vermeer_flow_image) — Instruction unique : recolorer uniquement les lèvres de image_ref_1 pour matcher exactement la couleur de image_ref_2. Préserve la texture, la brillance et les ombres naturelles des lèvres. Tout le reste (teint, dents, arrière-plan, cadrage, lumière, angle) reste identique à l'original.\n4. Preview · result (PreviewImage) — Vérification visuelle rapide avant sauvegarde.\n5. Save · final photo (SaveImage) — Sauvegarde le résultat final.\n\n--- COMMENT CHANGER LA TEINTE ---\nRemplace simplement l'image branchée sur image_ref_2 par une autre photo de référence de rouge à lèvres, puis relance. Pas besoin de toucher au texte du prompt — la couleur vient toujours de image_ref_2, pas d'un code hex.\n\n--- POURQUOI UNE IMAGE DE RÉFÉRENCE PLUTÔT QU'UN CODE HEX ---\nLes modèles de génération d'image matchent plus fidèlement une vraie photo de couleur qu'un code hex écrit en texte, surtout pour des nuances proches (ex: rouge chaud vs rouge à base bleutée).\n\n--- UTILE POUR ---\n- Générer toute la gamme de teintes à partir d'un seul shooting\n- Aligner du contenu UGC/influenceur sur la couleur officielle du produit\n- Décliner rapidement pour les réseaux sociaux sans nouveau shooting\n\n--- NODES REQUIS ---\n- vermeer_flow_image (node API Vermeer Flow, modèle : nano-banana-pro ou tout autre modèle d'édition d'image disponible sur ton instance)\nNote : si nano-banana-pro n'est pas dans ta liste whitelistée, remplace le champ model par le modèle d'édition d'image (pas juste texte) disponible chez toi."
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 3,
+      "type": "PreviewImage",
+      "pos": [
+        1130.3204182931004,
+        21.00351935992284
+      ],
+      "size": [
+        163.079951171875,
+        250.8
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 5
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Preview · result",
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": [],
+      "widgets_values_named": {}
+    },
+    {
+      "id": 4,
+      "type": "SaveImage",
+      "pos": [
+        1301.819890404246,
+        485.3720871680503
+      ],
+      "size": [
+        343.9999237060547,
+        276.8
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 6
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Save · final photo",
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "lipswap/lipcolor_"
+      ],
+      "widgets_values_named": {
+        "filename_prefix": "lipswap/lipcolor_"
+      }
+    },
+    {
+      "id": 2,
+      "type": "vermeer_flow_image",
+      "pos": [
+        615.9998931884766,
+        136
+      ],
+      "size": [
+        400,
+        824.0000000000001
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 4
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 7
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image_ref_5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image_ref_6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_1",
+          "type": "IMAGE",
+          "links": [
+            5,
+            6
+          ]
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "asset_ids",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "asset_urls",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "cost_credits",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "job_id",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "metadata_json",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "width",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "height",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "title": "Image Edit · Lip Color Swap",
+      "properties": {
+        "Node name for S&R": "vermeer_flow_image"
+      },
+      "widgets_values": [
+        "nano-banana-pro  —  Google | Nano Banana Pro",
+        "Edit image_ref_1 (the photo): recolor ONLY the lips to match the exact color shown in image_ref_2 (the lipstick swatch/reference), matte finish. Preserve natural lip texture, shine and shadow variation — do not flatten the color. Do not change anything else: keep skin tone, teeth, background, framing, lighting and camera angle strictly identical to the original.",
+        "3:4",
+        "4K",
+        "1024x1024",
+        "auto",
+        "auto",
+        "2048x2048",
+        0,
+        0,
+        1,
+        1,
+        "default",
+        2558091325,
+        "randomize",
+        "",
+        "",
+        "",
+        5,
+        900,
+        "",
+        "",
+        "",
+        ""
+      ],
+      "widgets_values_named": {
+        "model": "nano-banana-pro  —  Google | Nano Banana Pro",
+        "prompt": "Edit image_ref_1 (the photo): recolor ONLY the lips to match the exact color shown in image_ref_2 (the lipstick swatch/reference), matte finish. Preserve natural lip texture, shine and shadow variation — do not flatten the color. Do not change anything else: keep skin tone, teeth, background, framing, lighting and camera angle strictly identical to the original.",
+        "aspect_ratio": "3:4",
+        "image_size": "4K",
+        "resolution": "1024x1024",
+        "quality": "auto",
+        "background": "auto",
+        "size": "2048x2048",
+        "width": 0,
+        "height": 0,
+        "batch_size": 1,
+        "max_images": 1,
+        "prompt_optimization_mode": "default",
+        "seed": 2558091325,
+        "control_after_generate": "randomize",
+        "input_asset_ids": "",
+        "folder_id": "",
+        "idempotency_key": "",
+        "poll_interval_s": 5,
+        "max_wait_s": 900,
+        "token_override": "",
+        "base_url_override": "",
+        "_vermeer_preview": "",
+        "_vermeer_run_bar": ""
+      },
+      "color": "#0d0d0d",
+      "bgcolor": "#141414",
+      "boxcolor": "#22c55e",
+      "shape": 1
+    }
+  ],
+  "links": [
+    [
+      4,
+      1,
+      0,
+      2,
+      0,
+      "IMAGE"
+    ],
+    [
+      5,
+      2,
+      0,
+      3,
+      0,
+      "IMAGE"
+    ],
+    [
+      6,
+      2,
+      0,
+      4,
+      0,
+      "IMAGE"
+    ],
+    [
+      7,
+      5,
+      0,
+      2,
+      1,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.7663188521506843,
+      "offset": [
+        1130.9559795472328,
+        141.089703725611
+      ]
+    },
+    "frontendVersion": "1.51.9",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
