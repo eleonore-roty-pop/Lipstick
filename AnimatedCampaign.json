@@ -1,0 +1,933 @@
+{
+  "id": "47b4465f-0c66-44c5-8cb5-03865885901a",
+  "revision": 0,
+  "last_node_id": 29,
+  "last_link_id": 23,
+  "nodes": [
+    {
+      "id": 2,
+      "type": "LoadImage",
+      "pos": [
+        -783.7507109034815,
+        -484.63171463706533
+      ],
+      "size": [
+        415.99989318847656,
+        326.8
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "fushia.webp",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "fushia.webp",
+        "upload": "image"
+      }
+    },
+    {
+      "id": 27,
+      "type": "LoadImage",
+      "pos": [
+        -760.6427061855142,
+        383.0929297312938
+      ],
+      "size": [
+        415.99989318847656,
+        326.8
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            19
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "anna.jpg",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "anna.jpg",
+        "upload": "image"
+      }
+    },
+    {
+      "id": 29,
+      "type": "SaveImage",
+      "pos": [
+        338.6464215575364,
+        389.6780105219969
+      ],
+      "size": [
+        343.9999237060547,
+        276.8
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 20
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "AnimatedColor"
+      ],
+      "widgets_values_named": {
+        "filename_prefix": "AnimatedColor"
+      }
+    },
+    {
+      "id": 3,
+      "type": "SaveImage",
+      "pos": [
+        336.35851121153763,
+        -589.9034047234968
+      ],
+      "size": [
+        343.9999237060547,
+        276.79999999999995
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            23
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "AnimatedColor"
+      ],
+      "widgets_values_named": {
+        "filename_prefix": "AnimatedColor"
+      }
+    },
+    {
+      "id": 1,
+      "type": "vermeer_flow_image",
+      "pos": [
+        -227.97217389010035,
+        -543.4383411701439
+      ],
+      "size": [
+        400,
+        824.0000000000001
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 1
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_1",
+          "type": "IMAGE",
+          "links": [
+            2
+          ]
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "asset_ids",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "asset_urls",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "cost_credits",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "job_id",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "metadata_json",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "width",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "height",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "vermeer_flow_image"
+      },
+      "widgets_values": [
+        "nano-banana-pro  —  Google | Nano Banana Pro",
+        "Transform this lipstick tube photo into a 2D flat illustration in the style of Michel Ocelot (Kirikou, Azur et Asmar, Princes et Princesses). Render the tube as a flat, boldly-colored silhouette with clean, precise cut-paper-like edges — no photorealistic shading or gradients on the object itself. Add intricate decorative ornamental patterns (folk-art inspired, filigree-like) engraved or etched onto the tube's surface. Place it against a rich, saturated gradient background (warm jewel tones — deep blues, ochres, or magentas) as if backlit, similar to Ocelot's signature silhouette-against-sunset compositions. Keep the overall product shape and proportions recognizable and accurate to the reference photo. Flat 2D illustration, no 3D rendering, no photorealism.\nPlace it against a solid flat white background, no gradient, no texture.",
+        "1:1",
+        "1K",
+        "1024x1024",
+        "auto",
+        "auto",
+        "2048x2048",
+        0,
+        0,
+        1,
+        1,
+        "default",
+        1049613714,
+        "randomize",
+        "",
+        "",
+        "",
+        5,
+        900,
+        "",
+        "",
+        "",
+        ""
+      ],
+      "widgets_values_named": {
+        "model": "nano-banana-pro  —  Google | Nano Banana Pro",
+        "prompt": "Transform this lipstick tube photo into a 2D flat illustration in the style of Michel Ocelot (Kirikou, Azur et Asmar, Princes et Princesses). Render the tube as a flat, boldly-colored silhouette with clean, precise cut-paper-like edges — no photorealistic shading or gradients on the object itself. Add intricate decorative ornamental patterns (folk-art inspired, filigree-like) engraved or etched onto the tube's surface. Place it against a rich, saturated gradient background (warm jewel tones — deep blues, ochres, or magentas) as if backlit, similar to Ocelot's signature silhouette-against-sunset compositions. Keep the overall product shape and proportions recognizable and accurate to the reference photo. Flat 2D illustration, no 3D rendering, no photorealism.\nPlace it against a solid flat white background, no gradient, no texture.",
+        "aspect_ratio": "1:1",
+        "image_size": "1K",
+        "resolution": "1024x1024",
+        "quality": "auto",
+        "background": "auto",
+        "size": "2048x2048",
+        "width": 0,
+        "height": 0,
+        "batch_size": 1,
+        "max_images": 1,
+        "prompt_optimization_mode": "default",
+        "seed": 1049613714,
+        "control_after_generate": "randomize",
+        "input_asset_ids": "",
+        "folder_id": "",
+        "idempotency_key": "",
+        "poll_interval_s": 5,
+        "max_wait_s": 900,
+        "token_override": "",
+        "base_url_override": "",
+        "_vermeer_preview": "",
+        "_vermeer_run_bar": ""
+      },
+      "color": "#0d0d0d",
+      "bgcolor": "#141414",
+      "boxcolor": "#22c55e",
+      "shape": 1
+    },
+    {
+      "id": 28,
+      "type": "vermeer_flow_image",
+      "pos": [
+        -182.34012766784846,
+        385.4605440942403
+      ],
+      "size": [
+        400,
+        824
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 19
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_1",
+          "type": "IMAGE",
+          "links": [
+            20
+          ]
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "asset_ids",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "asset_urls",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "cost_credits",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "job_id",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "metadata_json",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "width",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "height",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "vermeer_flow_image"
+      },
+      "widgets_values": [
+        "nano-banana-pro  —  Google | Nano Banana Pro",
+        "Transform this photo of a person into a 2D flat illustration in the style of Michel Ocelot (Kirikou, Azur et Asmar, Princes et Princesses). Render the figure as a flat, boldly-colored silhouette or flat-shaded illustration with clean, precise cut-paper-like edges — no photorealistic shading, no soft gradients on the skin or clothing. Preserve the person's exact pose, proportions, and silhouette from the reference photo. Add intricate decorative ornamental patterns (folk-art inspired, filigree-like motifs) on the clothing, hair, or jewelry, echoing the reference photo's outfit and features in simplified flat shapes. Place the figure against a rich, saturated gradient background (warm jewel tones — deep blues, ochres, or magentas) as if backlit at sunset, similar to Ocelot's signature silhouette compositions. Keep facial features and hair simplified into flat color blocks rather than realistic detail, while remaining recognizable. Flat 2D illustration, no 3D rendering, no photorealism.\nPlace it against a solid flat white background, no gradient, no texture.",
+        "1:1",
+        "1K",
+        "1024x1024",
+        "auto",
+        "auto",
+        "2048x2048",
+        0,
+        0,
+        1,
+        1,
+        "default",
+        2383765580,
+        "randomize",
+        "",
+        "",
+        "",
+        5,
+        900,
+        "",
+        "",
+        "",
+        ""
+      ],
+      "widgets_values_named": {
+        "model": "nano-banana-pro  —  Google | Nano Banana Pro",
+        "prompt": "Transform this photo of a person into a 2D flat illustration in the style of Michel Ocelot (Kirikou, Azur et Asmar, Princes et Princesses). Render the figure as a flat, boldly-colored silhouette or flat-shaded illustration with clean, precise cut-paper-like edges — no photorealistic shading, no soft gradients on the skin or clothing. Preserve the person's exact pose, proportions, and silhouette from the reference photo. Add intricate decorative ornamental patterns (folk-art inspired, filigree-like motifs) on the clothing, hair, or jewelry, echoing the reference photo's outfit and features in simplified flat shapes. Place the figure against a rich, saturated gradient background (warm jewel tones — deep blues, ochres, or magentas) as if backlit at sunset, similar to Ocelot's signature silhouette compositions. Keep facial features and hair simplified into flat color blocks rather than realistic detail, while remaining recognizable. Flat 2D illustration, no 3D rendering, no photorealism.\nPlace it against a solid flat white background, no gradient, no texture.",
+        "aspect_ratio": "1:1",
+        "image_size": "1K",
+        "resolution": "1024x1024",
+        "quality": "auto",
+        "background": "auto",
+        "size": "2048x2048",
+        "width": 0,
+        "height": 0,
+        "batch_size": 1,
+        "max_images": 1,
+        "prompt_optimization_mode": "default",
+        "seed": 2383765580,
+        "control_after_generate": "randomize",
+        "input_asset_ids": "",
+        "folder_id": "",
+        "idempotency_key": "",
+        "poll_interval_s": 5,
+        "max_wait_s": 900,
+        "token_override": "",
+        "base_url_override": "",
+        "_vermeer_preview": "",
+        "_vermeer_run_bar": ""
+      },
+      "color": "#0d0d0d",
+      "bgcolor": "#141414",
+      "boxcolor": "#22c55e",
+      "shape": 1
+    },
+    {
+      "id": 5,
+      "type": "CreateVideo",
+      "pos": [
+        1386.5008362965189,
+        -637.3863818130285
+      ],
+      "size": [
+        270,
+        140
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 21
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            22
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CreateVideo"
+      },
+      "widgets_values": [
+        31,
+        "auto",
+        "sRGB"
+      ],
+      "widgets_values_named": {
+        "fps": 31,
+        "bit_depth": "auto",
+        "color_space": "sRGB"
+      }
+    },
+    {
+      "id": 7,
+      "type": "SaveVideo",
+      "pos": [
+        1788.5876973426803,
+        -521.7871507563204
+      ],
+      "size": [
+        300.79994201660156,
+        281.48144819471565
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "link": 22
+        }
+      ],
+      "outputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveVideo"
+      },
+      "widgets_values": [
+        "video/ComfyUI",
+        "auto",
+        "auto",
+        "auto"
+      ],
+      "widgets_values_named": {
+        "filename_prefix": "video/ComfyUI",
+        "format": "auto",
+        "format.codec": "auto",
+        "codec": "auto"
+      }
+    },
+    {
+      "id": 4,
+      "type": "vermeer_flow_video",
+      "pos": [
+        851.411899298886,
+        -706.8433094321495
+      ],
+      "size": [
+        400,
+        950.0000000000002
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 23
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "first_frame",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "last_frame",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "reference_video",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "reference_audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "edit_video",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "frames",
+          "type": "IMAGE",
+          "links": [
+            21
+          ]
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "video",
+          "type": "VIDEO",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "audio",
+          "type": "AUDIO",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "asset_ids",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "asset_urls",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "cost_credits",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "job_id",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "metadata_json",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "width",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "height",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "vermeer_flow_video"
+      },
+      "widgets_values": [
+        "seedance-2  —  ByteDance | Seedance 2.0",
+        "Animate the opening of this lipstick tube in the 2D flat illustration style of Michel Ocelot (Kirikou, Azur et Asmar). Keep the flat, boldly-colored silhouette look with clean cut-paper-like edges throughout the entire animation — no photorealistic shading or 3D rendering at any frame. Sequence: the cap smoothly rotates and lifts away from the tube in one continuous motion, then the bullet glides upward and locks into place, fully extended. Motion should be fluid and continuous, like traditional 2D animation with smooth easing (ease-in, ease-out) between poses — not stop-motion, not choppy, not stuttering, no held frames or jitter. Maintain the flat ornamental patterns and silhouette aesthetic on the tube's surface as it moves, with the same rich saturated gradient background staying consistent throughout. Elegant, gentle pacing, smooth interpolation between every frame.",
+        "",
+        "4",
+        "1280x720",
+        "480p",
+        false,
+        "",
+        "",
+        "mp4",
+        "",
+        "",
+        "",
+        390054586,
+        "randomize",
+        1,
+        "16:9",
+        "",
+        "",
+        "",
+        "",
+        5,
+        900,
+        "",
+        "",
+        "",
+        ""
+      ],
+      "widgets_values_named": {
+        "model": "seedance-2  —  ByteDance | Seedance 2.0",
+        "prompt": "Animate the opening of this lipstick tube in the 2D flat illustration style of Michel Ocelot (Kirikou, Azur et Asmar). Keep the flat, boldly-colored silhouette look with clean cut-paper-like edges throughout the entire animation — no photorealistic shading or 3D rendering at any frame. Sequence: the cap smoothly rotates and lifts away from the tube in one continuous motion, then the bullet glides upward and locks into place, fully extended. Motion should be fluid and continuous, like traditional 2D animation with smooth easing (ease-in, ease-out) between poses — not stop-motion, not choppy, not stuttering, no held frames or jitter. Maintain the flat ornamental patterns and silhouette aesthetic on the tube's surface as it moves, with the same rich saturated gradient background staying consistent throughout. Elegant, gentle pacing, smooth interpolation between every frame.",
+        "input_asset_ids": "",
+        "duration": "4",
+        "resolution": "1280x720",
+        "resolution_preset": "480p",
+        "generate_audio": false,
+        "reference_video_asset_id": "",
+        "reference_audio_asset_id": "",
+        "output_format": "mp4",
+        "prompt_negative": "",
+        "first_frame_asset_id": "",
+        "last_frame_asset_id": "",
+        "seed": 390054586,
+        "control_after_generate": "randomize",
+        "batch_size": 1,
+        "aspect_ratio": "16:9",
+        "previous_job_id": "",
+        "video_asset_id": "",
+        "folder_id": "",
+        "idempotency_key": "",
+        "poll_interval_s": 5,
+        "max_wait_s": 900,
+        "token_override": "",
+        "base_url_override": "",
+        "_vermeer_preview": "",
+        "_vermeer_run_bar": ""
+      },
+      "color": "#0d0d0d",
+      "bgcolor": "#141414",
+      "boxcolor": "#22c55e",
+      "shape": 1
+    }
+  ],
+  "links": [
+    [
+      1,
+      2,
+      0,
+      1,
+      0,
+      "IMAGE"
+    ],
+    [
+      2,
+      1,
+      0,
+      3,
+      0,
+      "IMAGE"
+    ],
+    [
+      19,
+      27,
+      0,
+      28,
+      0,
+      "IMAGE"
+    ],
+    [
+      20,
+      28,
+      0,
+      29,
+      0,
+      "IMAGE"
+    ],
+    [
+      21,
+      4,
+      0,
+      5,
+      0,
+      "IMAGE"
+    ],
+    [
+      22,
+      5,
+      0,
+      7,
+      0,
+      "VIDEO"
+    ],
+    [
+      23,
+      3,
+      0,
+      4,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.4446649547891381,
+      "offset": [
+        1373.2892518170174,
+        1224.5283318612803
+      ]
+    },
+    "frontendVersion": "1.51.9",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
