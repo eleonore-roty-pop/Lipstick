@@ -1,0 +1,2248 @@
+{
+  "id": "57e5649c-a143-4b2c-9026-42996c3b10e7",
+  "revision": 0,
+  "last_node_id": 18,
+  "last_link_id": 39,
+  "nodes": [
+    {
+      "id": 2,
+      "type": "LoadImage",
+      "pos": [
+        -1607.3210564614822,
+        -920.2510453038717
+      ],
+      "size": [
+        415.99989318847656,
+        326.80000000000007
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            8
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "title": "INPUT · lipstick option 1",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ballet.webp",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "ballet.webp",
+        "upload": "image"
+      },
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 3,
+      "type": "LoadImage",
+      "pos": [
+        -1607.3916891901974,
+        -512.0861431968706
+      ],
+      "size": [
+        415.99989318847656,
+        326.80000000000007
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            9
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "title": "INPUT · lipstick option 2",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "corallo.webp",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "corallo.webp",
+        "upload": "image"
+      },
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 4,
+      "type": "LoadImage",
+      "pos": [
+        -1606.959420987709,
+        -106.58557616252799
+      ],
+      "size": [
+        415.99989318847656,
+        326.8
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            10
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "title": "INPUT · lipstick option 3",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "mauve.webp",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "mauve.webp",
+        "upload": "image"
+      },
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 5,
+      "type": "LoadImage",
+      "pos": [
+        -1604.671325088937,
+        293.51366724459984
+      ],
+      "size": [
+        415.99989318847656,
+        326.80000000000007
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            11
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "title": "INPUT · lipstick option 4",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "fushia.webp",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "fushia.webp",
+        "upload": "image"
+      },
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 6,
+      "type": "LoadImage",
+      "pos": [
+        -1606.610434720205,
+        699.7576855934232
+      ],
+      "size": [
+        415.99989318847656,
+        326.80000000000007
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            12
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "title": "INPUT · lipstick option 5",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "red.webp",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "red.webp",
+        "upload": "image"
+      },
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": "1c",
+      "type": "LoadImage",
+      "pos": [
+        -727.2608626263998,
+        804.6151399871356
+      ],
+      "size": [
+        415.99989318847656,
+        326.8000000000002
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            15,
+            39
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "title": "INPUT · person 3 photo",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "michelle.jpg",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "michelle.jpg",
+        "upload": "image"
+      },
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": "1a",
+      "type": "LoadImage",
+      "pos": [
+        -727.9421174171255,
+        25.84214048120782
+      ],
+      "size": [
+        415.99989318847656,
+        326.8000000000002
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            22,
+            27
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "title": "INPUT · person 1 photo",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "anna.jpg",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "anna.jpg",
+        "upload": "image"
+      },
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": "8a",
+      "type": "ShowText|pysssss",
+      "pos": [
+        604.1263911429899,
+        70.11366339829435
+      ],
+      "size": [
+        380.81602205136335,
+        142.3499810721782
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 29
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": [
+            20
+          ]
+        }
+      ],
+      "title": "Output · Recommendation Person 1",
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      }
+    },
+    {
+      "id": 10,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        599.3917389629659,
+        262.28732689663724
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            19
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "Edit image_ref_1: recolor only the lips to match the lipstick shown in the reference indicated below. Preserve natural lip texture, shine and shadow. Keep everything else identical (skin, teeth, background, lighting, framing, angle).\n\nimage_ref_2 contains 5 stacked lipstick images in order (position 1 to 5). Use the position number given below to pick the correct one.\n"
+      ],
+      "widgets_values_named": {
+        "value": "Edit image_ref_1: recolor only the lips to match the lipstick shown in the reference indicated below. Preserve natural lip texture, shine and shadow. Keep everything else identical (skin, teeth, background, lighting, framing, angle).\n\nimage_ref_2 contains 5 stacked lipstick images in order (position 1 to 5). Use the position number given below to pick the correct one.\n"
+      }
+    },
+    {
+      "id": 9,
+      "type": "VermeerTextMixer",
+      "pos": [
+        1039.6167515227396,
+        187.7179861096374
+      ],
+      "size": [
+        210,
+        120
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "txt_1",
+          "shape": 7,
+          "type": "STRING",
+          "link": 19
+        },
+        {
+          "name": "txt_2",
+          "shape": 7,
+          "type": "STRING",
+          "link": 20
+        },
+        {
+          "name": "txt_3",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            21
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VermeerTextMixer"
+      },
+      "widgets_values": [
+        "newline"
+      ],
+      "widgets_values_named": {
+        "separator": "newline"
+      },
+      "color": "#0d0d0d",
+      "bgcolor": "#141414"
+    },
+    {
+      "id": 8,
+      "type": "vermeer_flow_image",
+      "pos": [
+        1341.4972995030805,
+        -134.29040016414788
+      ],
+      "size": [
+        400,
+        1360
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 22
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 23
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image_ref_5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image_ref_6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_7",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_8",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_9",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_10",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_11",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_12",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_13",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_14",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#d946ef88",
+          "color_on": "#d946ef",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 21
+        }
+      ],
+      "outputs": [
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_1",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_2",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_3",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_4",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_5",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_6",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "asset_ids",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "asset_urls",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "cost_credits",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "job_id",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "metadata_json",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "width",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "height",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "title": "Image Edit · Lip Color Swap",
+      "properties": {
+        "Node name for S&R": "vermeer_flow_image"
+      },
+      "widgets_values": [
+        "nano-banana-pro  —  Google | Nano Banana Pro",
+        "Edit image_ref_1 (the photo): recolor ONLY the lips to match the exact color shown in image_ref_2 (the lipstick swatch/reference), matte finish. Preserve natural lip texture, shine and shadow variation — do not flatten the color. Do not change anything else: keep skin tone, teeth, background, framing, lighting and camera angle strictly identical to the original.",
+        "3:4",
+        "4K",
+        "1024x1024",
+        "auto",
+        "auto",
+        "2048x2048",
+        0,
+        0,
+        1,
+        1,
+        "default",
+        1356038030,
+        "randomize",
+        "",
+        "",
+        "",
+        5,
+        900,
+        "",
+        "",
+        "",
+        ""
+      ],
+      "widgets_values_named": {
+        "model": "nano-banana-pro  —  Google | Nano Banana Pro",
+        "prompt": "Edit image_ref_1 (the photo): recolor ONLY the lips to match the exact color shown in image_ref_2 (the lipstick swatch/reference), matte finish. Preserve natural lip texture, shine and shadow variation — do not flatten the color. Do not change anything else: keep skin tone, teeth, background, framing, lighting and camera angle strictly identical to the original.",
+        "aspect_ratio": "3:4",
+        "image_size": "4K",
+        "resolution": "1024x1024",
+        "quality": "auto",
+        "background": "auto",
+        "size": "2048x2048",
+        "width": 0,
+        "height": 0,
+        "batch_size": 1,
+        "max_images": 1,
+        "prompt_optimization_mode": "default",
+        "seed": 1356038030,
+        "control_after_generate": "randomize",
+        "input_asset_ids": "",
+        "folder_id": "",
+        "idempotency_key": "",
+        "poll_interval_s": 5,
+        "max_wait_s": 900,
+        "token_override": "",
+        "base_url_override": "",
+        "_vermeer_preview": "",
+        "_vermeer_run_bar": ""
+      },
+      "color": "#0d0d0d",
+      "bgcolor": "#141414",
+      "boxcolor": "#22c55e",
+      "shape": 1
+    },
+    {
+      "id": 7,
+      "type": "ImageBatchMulti",
+      "pos": [
+        -722.7675041305054,
+        -354.1232045281116
+      ],
+      "size": [
+        381.72696582835374,
+        186
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image_1",
+          "type": "IMAGE",
+          "link": 8
+        },
+        {
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 9
+        },
+        {
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 10
+        },
+        {
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 11
+        },
+        {
+          "name": "image_5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 12
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            18,
+            23,
+            25,
+            28,
+            33,
+            38
+          ]
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        5,
+        null
+      ],
+      "widgets_values_named": {
+        "inputcount": 5,
+        "Update inputs": null
+      }
+    },
+    {
+      "id": "1b",
+      "type": "LoadImage",
+      "pos": [
+        -722.274399636145,
+        406.0686170530045
+      ],
+      "size": [
+        415.99989318847656,
+        326.80000000000007
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            24,
+            34
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "title": "INPUT · person 2 photo",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "dakota.jpg",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "dakota.jpg",
+        "upload": "image"
+      },
+      "color": "#2a363b",
+      "bgcolor": "#3f5159"
+    },
+    {
+      "id": 15,
+      "type": "VermeerTextMixer",
+      "pos": [
+        1090.6483452742566,
+        1001.1832328268295
+      ],
+      "size": [
+        210,
+        120
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "txt_1",
+          "shape": 7,
+          "type": "STRING",
+          "link": 30
+        },
+        {
+          "name": "txt_2",
+          "shape": 7,
+          "type": "STRING",
+          "link": 31
+        },
+        {
+          "name": "txt_3",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            32
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VermeerTextMixer"
+      },
+      "widgets_values": [
+        "newline"
+      ],
+      "widgets_values_named": {
+        "separator": "newline"
+      },
+      "color": "#0d0d0d",
+      "bgcolor": "#141414"
+    },
+    {
+      "id": 13,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        604.2576316358856,
+        1048.943516075004
+      ],
+      "size": [
+        414.3811322134102,
+        202.33322204052376
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            30
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "Edit image_ref_2: recolor only the lips to match the lipstick shown in the reference indicated below. Preserve natural lip texture, shine and shadow. Keep everything else identical (skin, teeth, background, lighting, framing, angle).\n\nimage_ref_2 contains 5 stacked lipstick images in order (position 1 to 5). Use the position number given below to pick the correct one.\n"
+      ],
+      "widgets_values_named": {
+        "value": "Edit image_ref_2: recolor only the lips to match the lipstick shown in the reference indicated below. Preserve natural lip texture, shine and shadow. Keep everything else identical (skin, teeth, background, lighting, framing, angle).\n\nimage_ref_2 contains 5 stacked lipstick images in order (position 1 to 5). Use the position number given below to pick the correct one.\n"
+      }
+    },
+    {
+      "id": "8b",
+      "type": "ShowText|pysssss",
+      "pos": [
+        615.7093979390032,
+        817.1431400395621
+      ],
+      "size": [
+        424.9712618647177,
+        155.044921876368
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 26
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": [
+            31
+          ]
+        }
+      ],
+      "title": "Output · Recommendation Person 2",
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      }
+    },
+    {
+      "id": 16,
+      "type": "vermeer_flow_image",
+      "pos": [
+        1364.622884390035,
+        889.4720979927367
+      ],
+      "size": [
+        400,
+        1360
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 34
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 33
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image_ref_5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image_ref_6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_7",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_8",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_9",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_10",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_11",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_12",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_13",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_14",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#d946ef88",
+          "color_on": "#d946ef",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 32
+        }
+      ],
+      "outputs": [
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_1",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_2",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_3",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_4",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_5",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_6",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "asset_ids",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "asset_urls",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "cost_credits",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "job_id",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "metadata_json",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "width",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "height",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "title": "Image Edit · Lip Color Swap",
+      "properties": {
+        "Node name for S&R": "vermeer_flow_image"
+      },
+      "widgets_values": [
+        "nano-banana-pro  —  Google | Nano Banana Pro",
+        "Edit image_ref_1 (the photo): recolor ONLY the lips to match the exact color shown in image_ref_2 (the lipstick swatch/reference), matte finish. Preserve natural lip texture, shine and shadow variation — do not flatten the color. Do not change anything else: keep skin tone, teeth, background, framing, lighting and camera angle strictly identical to the original.",
+        "3:4",
+        "4K",
+        "1024x1024",
+        "auto",
+        "auto",
+        "2048x2048",
+        0,
+        0,
+        1,
+        1,
+        "default",
+        2900597360,
+        "randomize",
+        "",
+        "",
+        "",
+        5,
+        900,
+        "",
+        "",
+        "",
+        ""
+      ],
+      "widgets_values_named": {
+        "model": "nano-banana-pro  —  Google | Nano Banana Pro",
+        "prompt": "Edit image_ref_1 (the photo): recolor ONLY the lips to match the exact color shown in image_ref_2 (the lipstick swatch/reference), matte finish. Preserve natural lip texture, shine and shadow variation — do not flatten the color. Do not change anything else: keep skin tone, teeth, background, framing, lighting and camera angle strictly identical to the original.",
+        "aspect_ratio": "3:4",
+        "image_size": "4K",
+        "resolution": "1024x1024",
+        "quality": "auto",
+        "background": "auto",
+        "size": "2048x2048",
+        "width": 0,
+        "height": 0,
+        "batch_size": 1,
+        "max_images": 1,
+        "prompt_optimization_mode": "default",
+        "seed": 2900597360,
+        "control_after_generate": "randomize",
+        "input_asset_ids": "",
+        "folder_id": "",
+        "idempotency_key": "",
+        "poll_interval_s": 5,
+        "max_wait_s": 900,
+        "token_override": "",
+        "base_url_override": "",
+        "_vermeer_preview": "",
+        "_vermeer_run_bar": ""
+      },
+      "color": "#0d0d0d",
+      "bgcolor": "#141414",
+      "boxcolor": "#22c55e",
+      "shape": 1
+    },
+    {
+      "id": 14,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        554.6389052414335,
+        2029.1826763610338
+      ],
+      "size": [
+        435.6817996904342,
+        203.58232070868291
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            35
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "Edit image_ref_3: recolor only the lips to match the lipstick shown in the reference indicated below. Preserve natural lip texture, shine and shadow. Keep everything else identical (skin, teeth, background, lighting, framing, angle).\n\nimage_ref_2 contains 5 stacked lipstick images in order (position 1 to 5). Use the position number given below to pick the correct one.\n"
+      ],
+      "widgets_values_named": {
+        "value": "Edit image_ref_3: recolor only the lips to match the lipstick shown in the reference indicated below. Preserve natural lip texture, shine and shadow. Keep everything else identical (skin, teeth, background, lighting, framing, angle).\n\nimage_ref_2 contains 5 stacked lipstick images in order (position 1 to 5). Use the position number given below to pick the correct one.\n"
+      }
+    },
+    {
+      "id": "8c",
+      "type": "ShowText|pysssss",
+      "pos": [
+        562.6179748469821,
+        1763.7113383475128
+      ],
+      "size": [
+        439.78244943422555,
+        167.51666660240073
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 6
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": [
+            36
+          ]
+        }
+      ],
+      "title": "Output · Recommendation Person 3",
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      }
+    },
+    {
+      "id": 17,
+      "type": "VermeerTextMixer",
+      "pos": [
+        1139.0593310921024,
+        1911.7324488963532
+      ],
+      "size": [
+        210,
+        120
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "txt_1",
+          "shape": 7,
+          "type": "STRING",
+          "link": 35
+        },
+        {
+          "name": "txt_2",
+          "shape": 7,
+          "type": "STRING",
+          "link": 36
+        },
+        {
+          "name": "txt_3",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            37
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VermeerTextMixer"
+      },
+      "widgets_values": [
+        "newline"
+      ],
+      "widgets_values_named": {
+        "separator": "newline"
+      },
+      "color": "#0d0d0d",
+      "bgcolor": "#141414"
+    },
+    {
+      "id": 18,
+      "type": "vermeer_flow_image",
+      "pos": [
+        1387.9419807883621,
+        1809.7302673894906
+      ],
+      "size": [
+        400,
+        1360
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 39
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 38
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image_ref_5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image_ref_6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_7",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_8",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_9",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_10",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_11",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_12",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_13",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_ref_14",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "color_off": "#d946ef88",
+          "color_on": "#d946ef",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 37
+        }
+      ],
+      "outputs": [
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_1",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_2",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_3",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_4",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_5",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_6",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "asset_ids",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "asset_urls",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "cost_credits",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "job_id",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "metadata_json",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "width",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "height",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "title": "Image Edit · Lip Color Swap",
+      "properties": {
+        "Node name for S&R": "vermeer_flow_image"
+      },
+      "widgets_values": [
+        "nano-banana-pro  —  Google | Nano Banana Pro",
+        "Edit image_ref_1 (the photo): recolor ONLY the lips to match the exact color shown in image_ref_2 (the lipstick swatch/reference), matte finish. Preserve natural lip texture, shine and shadow variation — do not flatten the color. Do not change anything else: keep skin tone, teeth, background, framing, lighting and camera angle strictly identical to the original.",
+        "3:4",
+        "4K",
+        "1024x1024",
+        "auto",
+        "auto",
+        "2048x2048",
+        0,
+        0,
+        1,
+        1,
+        "default",
+        1149636202,
+        "randomize",
+        "",
+        "",
+        "",
+        5,
+        900,
+        "",
+        "",
+        "",
+        ""
+      ],
+      "widgets_values_named": {
+        "model": "nano-banana-pro  —  Google | Nano Banana Pro",
+        "prompt": "Edit image_ref_1 (the photo): recolor ONLY the lips to match the exact color shown in image_ref_2 (the lipstick swatch/reference), matte finish. Preserve natural lip texture, shine and shadow variation — do not flatten the color. Do not change anything else: keep skin tone, teeth, background, framing, lighting and camera angle strictly identical to the original.",
+        "aspect_ratio": "3:4",
+        "image_size": "4K",
+        "resolution": "1024x1024",
+        "quality": "auto",
+        "background": "auto",
+        "size": "2048x2048",
+        "width": 0,
+        "height": 0,
+        "batch_size": 1,
+        "max_images": 1,
+        "prompt_optimization_mode": "default",
+        "seed": 1149636202,
+        "control_after_generate": "randomize",
+        "input_asset_ids": "",
+        "folder_id": "",
+        "idempotency_key": "",
+        "poll_interval_s": 5,
+        "max_wait_s": 900,
+        "token_override": "",
+        "base_url_override": "",
+        "_vermeer_preview": "",
+        "_vermeer_run_bar": ""
+      },
+      "color": "#0d0d0d",
+      "bgcolor": "#141414",
+      "boxcolor": "#22c55e",
+      "shape": 1
+    },
+    {
+      "id": "7c",
+      "type": "vermeer_flow_gemini",
+      "pos": [
+        -8.767541081663046,
+        871.7759200731928
+      ],
+      "size": [
+        400,
+        410.0000000000001
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 15
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 18
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            6
+          ]
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "asset_id",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "credits_charged",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "raw_json",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "Analyze · Best Match for Person 3",
+      "properties": {
+        "Node name for S&R": "vermeer_flow_gemini"
+      },
+      "widgets_values": [
+        "image shows a person. image_2 contains a batch of images each show a different lipstick option (product photo or swatch).  Step 1: Describe the person's skin undertone (warm/cool/neutral), eye color, and hair color. Step 2: For each lipstick option, briefly note its color family (e.g. blue-based red, orange-based red, brown-nude, berry, coral).  Step 3: Using color theory (contrast and harmony with undertone, eye color and hair color), determine which single lipstick option would suit this person best. Respond in this exact format:\n\nBEST MATCH: position [number]\n\nREASON: [one or two sentences explaining why, referencing undertone/eye color/hair color]\n\nRUNNER-UP: position [number] (optional second-best choice, one sentence why)",
+        "gemini-3.5-flash",
+        "image shows a person. image_2 contains a batch of images each show a different lipstick option (product photo or swatch).  Step 1: Describe the person's skin undertone (warm/cool/neutral), eye color, and hair color. Step 2: For each lipstick option, briefly note its color family (e.g. blue-based red, orange-based red, brown-nude, berry, coral).  Step 3: Using color theory (contrast and harmony with undertone, eye color and hair color), determine which single lipstick option would suit this person best. Respond in this exact format:\n\nBEST MATCH: position [number]\n\nREASON: [one or two sentences explaining why, referencing undertone/eye color/hair color]\n\nRUNNER-UP: position [number] (optional second-best choice, one sentence why)",
+        1024,
+        1,
+        "",
+        "",
+        ""
+      ],
+      "widgets_values_named": {
+        "prompt": "image shows a person. image_2 contains a batch of images each show a different lipstick option (product photo or swatch).  Step 1: Describe the person's skin undertone (warm/cool/neutral), eye color, and hair color. Step 2: For each lipstick option, briefly note its color family (e.g. blue-based red, orange-based red, brown-nude, berry, coral).  Step 3: Using color theory (contrast and harmony with undertone, eye color and hair color), determine which single lipstick option would suit this person best. Respond in this exact format:\n\nBEST MATCH: position [number]\n\nREASON: [one or two sentences explaining why, referencing undertone/eye color/hair color]\n\nRUNNER-UP: position [number] (optional second-best choice, one sentence why)",
+        "model": "gemini-3.5-flash",
+        "system_prompt": "image shows a person. image_2 contains a batch of images each show a different lipstick option (product photo or swatch).  Step 1: Describe the person's skin undertone (warm/cool/neutral), eye color, and hair color. Step 2: For each lipstick option, briefly note its color family (e.g. blue-based red, orange-based red, brown-nude, berry, coral).  Step 3: Using color theory (contrast and harmony with undertone, eye color and hair color), determine which single lipstick option would suit this person best. Respond in this exact format:\n\nBEST MATCH: position [number]\n\nREASON: [one or two sentences explaining why, referencing undertone/eye color/hair color]\n\nRUNNER-UP: position [number] (optional second-best choice, one sentence why)",
+        "max_output_tokens": 1024,
+        "temperature": 1,
+        "input_asset_ids": "",
+        "token_override": "",
+        "base_url_override": ""
+      },
+      "color": "#0d0d0d",
+      "bgcolor": "#141414",
+      "boxcolor": "#22c55e",
+      "shape": 1
+    },
+    {
+      "id": 11,
+      "type": "vermeer_flow_gemini",
+      "pos": [
+        -12.734671187082137,
+        312.92762411743803
+      ],
+      "size": [
+        400,
+        410.0000000000002
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 24
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 25
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            26
+          ]
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "asset_id",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "credits_charged",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "raw_json",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "vermeer_flow_gemini"
+      },
+      "widgets_values": [
+        "image shows a person. image_2 contains a batch of images each show a different lipstick option (product photo or swatch).  Step 1: Describe the person's skin undertone (warm/cool/neutral), eye color, and hair color. Step 2: For each lipstick option, briefly note its color family (e.g. blue-based red, orange-based red, brown-nude, berry, coral).  Step 3: Using color theory (contrast and harmony with undertone, eye color and hair color), determine which single lipstick option would suit this person best. Respond in this exact format:\n\nBEST MATCH: position [number]\n\nREASON: [one or two sentences explaining why, referencing undertone/eye color/hair color]\n\nRUNNER-UP: position [number] (optional second-best choice, one sentence why)",
+        "gemini-3.5-flash",
+        "image shows a person. image_2 contains a batch of images each show a different lipstick option (product photo or swatch).  Step 1: Describe the person's skin undertone (warm/cool/neutral), eye color, and hair color. Step 2: For each lipstick option, briefly note its color family (e.g. blue-based red, orange-based red, brown-nude, berry, coral).  Step 3: Using color theory (contrast and harmony with undertone, eye color and hair color), determine which single lipstick option would suit this person best. Respond in this exact format:\n\nBEST MATCH: position [number]\n\nREASON: [one or two sentences explaining why, referencing undertone/eye color/hair color]\n\nRUNNER-UP: position [number] (optional second-best choice, one sentence why)",
+        1024,
+        1,
+        "",
+        "",
+        ""
+      ],
+      "widgets_values_named": {
+        "prompt": "image shows a person. image_2 contains a batch of images each show a different lipstick option (product photo or swatch).  Step 1: Describe the person's skin undertone (warm/cool/neutral), eye color, and hair color. Step 2: For each lipstick option, briefly note its color family (e.g. blue-based red, orange-based red, brown-nude, berry, coral).  Step 3: Using color theory (contrast and harmony with undertone, eye color and hair color), determine which single lipstick option would suit this person best. Respond in this exact format:\n\nBEST MATCH: position [number]\n\nREASON: [one or two sentences explaining why, referencing undertone/eye color/hair color]\n\nRUNNER-UP: position [number] (optional second-best choice, one sentence why)",
+        "model": "gemini-3.5-flash",
+        "system_prompt": "image shows a person. image_2 contains a batch of images each show a different lipstick option (product photo or swatch).  Step 1: Describe the person's skin undertone (warm/cool/neutral), eye color, and hair color. Step 2: For each lipstick option, briefly note its color family (e.g. blue-based red, orange-based red, brown-nude, berry, coral).  Step 3: Using color theory (contrast and harmony with undertone, eye color and hair color), determine which single lipstick option would suit this person best. Respond in this exact format:\n\nBEST MATCH: position [number]\n\nREASON: [one or two sentences explaining why, referencing undertone/eye color/hair color]\n\nRUNNER-UP: position [number] (optional second-best choice, one sentence why)",
+        "max_output_tokens": 1024,
+        "temperature": 1,
+        "input_asset_ids": "",
+        "token_override": "",
+        "base_url_override": ""
+      },
+      "color": "#0d0d0d",
+      "bgcolor": "#141414",
+      "boxcolor": "#22c55e",
+      "shape": 1
+    },
+    {
+      "id": 12,
+      "type": "vermeer_flow_gemini",
+      "pos": [
+        -38.34213974105784,
+        -198.88097063242657
+      ],
+      "size": [
+        400,
+        410.00000000000034
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 27
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 28
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            29
+          ]
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "asset_id",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "credits_charged",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "color_off": "#22c55e88",
+          "color_on": "#22c55e",
+          "name": "raw_json",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "vermeer_flow_gemini"
+      },
+      "widgets_values": [
+        "image shows a person. image_2 through image_ref_6 each show a different lipstick option (product photo or swatch). Step 1: Describe the person's skin undertone (warm/cool/neutral), eye color, and hair color. Step 2: For each lipstick option, briefly note its color family (e.g. blue-based red, orange-based red, brown-nude, berry, coral). Step 3: Using color theory (contrast and harmony with undertone, eye color and hair color), determine which single lipstick option would suit this person best. Respond in this exact format:\n\nBEST MATCH: image_ref_[number]\nREASON: [one or two sentences explaining why, referencing undertone/eye color/hair color]\nRUNNER-UP: image_ref_[number] (optional second-best choice, one sentence why)",
+        "gemini-2.5-pro",
+        "image shows a person. image_2 contains a batch of images each show a different lipstick option (product photo or swatch).  Step 1: Describe the person's skin undertone (warm/cool/neutral), eye color, and hair color. Step 2: For each lipstick option, briefly note its color family (e.g. blue-based red, orange-based red, brown-nude, berry, coral).  Step 3: Using color theory (contrast and harmony with undertone, eye color and hair color), determine which single lipstick option would suit this person best. Respond in this exact format:\n\nBEST MATCH: position [number]\n\nREASON: [one or two sentences explaining why, referencing undertone/eye color/hair color]\n\nRUNNER-UP: position [number] (optional second-best choice, one sentence why)",
+        1024,
+        0.3,
+        "",
+        "",
+        ""
+      ],
+      "widgets_values_named": {
+        "prompt": "image shows a person. image_2 through image_ref_6 each show a different lipstick option (product photo or swatch). Step 1: Describe the person's skin undertone (warm/cool/neutral), eye color, and hair color. Step 2: For each lipstick option, briefly note its color family (e.g. blue-based red, orange-based red, brown-nude, berry, coral). Step 3: Using color theory (contrast and harmony with undertone, eye color and hair color), determine which single lipstick option would suit this person best. Respond in this exact format:\n\nBEST MATCH: image_ref_[number]\nREASON: [one or two sentences explaining why, referencing undertone/eye color/hair color]\nRUNNER-UP: image_ref_[number] (optional second-best choice, one sentence why)",
+        "model": "gemini-2.5-pro",
+        "system_prompt": "image shows a person. image_2 contains a batch of images each show a different lipstick option (product photo or swatch).  Step 1: Describe the person's skin undertone (warm/cool/neutral), eye color, and hair color. Step 2: For each lipstick option, briefly note its color family (e.g. blue-based red, orange-based red, brown-nude, berry, coral).  Step 3: Using color theory (contrast and harmony with undertone, eye color and hair color), determine which single lipstick option would suit this person best. Respond in this exact format:\n\nBEST MATCH: position [number]\n\nREASON: [one or two sentences explaining why, referencing undertone/eye color/hair color]\n\nRUNNER-UP: position [number] (optional second-best choice, one sentence why)",
+        "max_output_tokens": 1024,
+        "temperature": 0.3,
+        "input_asset_ids": "",
+        "token_override": "",
+        "base_url_override": ""
+      },
+      "color": "#0d0d0d",
+      "bgcolor": "#141414",
+      "boxcolor": "#22c55e",
+      "shape": 1
+    }
+  ],
+  "links": [
+    [
+      6,
+      "7c",
+      0,
+      "8c",
+      0,
+      "STRING"
+    ],
+    [
+      8,
+      2,
+      0,
+      7,
+      0,
+      "IMAGE"
+    ],
+    [
+      9,
+      3,
+      0,
+      7,
+      1,
+      "IMAGE"
+    ],
+    [
+      10,
+      4,
+      0,
+      7,
+      2,
+      "IMAGE"
+    ],
+    [
+      11,
+      5,
+      0,
+      7,
+      3,
+      "IMAGE"
+    ],
+    [
+      12,
+      6,
+      0,
+      7,
+      4,
+      "IMAGE"
+    ],
+    [
+      15,
+      "1c",
+      0,
+      "7c",
+      0,
+      "IMAGE"
+    ],
+    [
+      18,
+      7,
+      0,
+      "7c",
+      1,
+      "IMAGE"
+    ],
+    [
+      19,
+      10,
+      0,
+      9,
+      0,
+      "STRING"
+    ],
+    [
+      20,
+      "8a",
+      0,
+      9,
+      1,
+      "STRING"
+    ],
+    [
+      21,
+      9,
+      0,
+      8,
+      14,
+      "STRING"
+    ],
+    [
+      22,
+      "1a",
+      0,
+      8,
+      0,
+      "IMAGE"
+    ],
+    [
+      23,
+      7,
+      0,
+      8,
+      1,
+      "IMAGE"
+    ],
+    [
+      24,
+      "1b",
+      0,
+      11,
+      0,
+      "IMAGE"
+    ],
+    [
+      25,
+      7,
+      0,
+      11,
+      1,
+      "IMAGE"
+    ],
+    [
+      26,
+      11,
+      0,
+      "8b",
+      0,
+      "STRING"
+    ],
+    [
+      27,
+      "1a",
+      0,
+      12,
+      0,
+      "IMAGE"
+    ],
+    [
+      28,
+      7,
+      0,
+      12,
+      1,
+      "IMAGE"
+    ],
+    [
+      29,
+      12,
+      0,
+      "8a",
+      0,
+      "STRING"
+    ],
+    [
+      30,
+      13,
+      0,
+      15,
+      0,
+      "STRING"
+    ],
+    [
+      31,
+      "8b",
+      0,
+      15,
+      1,
+      "STRING"
+    ],
+    [
+      32,
+      15,
+      0,
+      16,
+      14,
+      "STRING"
+    ],
+    [
+      33,
+      7,
+      0,
+      16,
+      1,
+      "IMAGE"
+    ],
+    [
+      34,
+      "1b",
+      0,
+      16,
+      0,
+      "IMAGE"
+    ],
+    [
+      35,
+      14,
+      0,
+      17,
+      0,
+      "STRING"
+    ],
+    [
+      36,
+      "8c",
+      0,
+      17,
+      1,
+      "STRING"
+    ],
+    [
+      37,
+      17,
+      0,
+      18,
+      14,
+      "STRING"
+    ],
+    [
+      38,
+      7,
+      0,
+      18,
+      1,
+      "IMAGE"
+    ],
+    [
+      39,
+      "1c",
+      0,
+      18,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "LIPSTICKS",
+      "bounding": [
+        -1772.578272673945,
+        -1051.2942904910033,
+        745.8863516513997,
+        2140.916525749539
+      ],
+      "color": "#88A",
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "STARS",
+      "bounding": [
+        -744.2485704576393,
+        -83.15390411327097,
+        442.98760101971607,
+        1224.5690441004083
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5454193302925462,
+      "offset": [
+        732.7331869988552,
+        11.408378752309227
+      ]
+    },
+    "frontendVersion": "1.51.9",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
